@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    font-family: Segoe UI, Arial;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+
+/* header */
+header {
+    background-color: #030213;
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    
+}
+
+.left{
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glowna, .galeria, .opolsce, .atrakcje, .kontakt {
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.galeria:hover, .opolsce:hover, .atrakcje:hover, .kontakt:hover {
+    cursor: pointer;
+    background-color: #090912;
+    border-color: white;
+}
+
+.glowna{
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* header */
+
+
+/* main1 */
+
+main{
+    text-align: center;
+    flex: 1;
+}
+
+
+.first {
+    width: 100%;
+    height: 650px;
+    background-image: url("../zdjecia/warszawa.jpg");
+    background-size: cover;
+    background-position: 35% 35%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.first p {
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 2);
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.firstguzik a {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.firstguzik a:hover {
+    background-color: #f0f0f0;
+}
+
+/* main1 */
+
+/* main2 */
+.second {
+    padding: 90px;
+    background-color: rgba(129, 132, 156, 0.146);
+    text-align: center;
+}
+
+.flexs {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.svg {
+    background-color: #030213;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+}
+
+.svg img {
+    filter: brightness(0) invert(1);
+    width: 40px;
+    height: 40px;
+}
+
+.pp {
+    color: gray;
+}
+
+.dlaczego p{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+/* main2 */
+
+/* main3 */
+
+.third{
+    padding: 70px;
+}
+
+.third p{
+    color: gray;
+    font-size: 20px;
+}
+
+.third .naglowek{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    gap: 20px;
+}
+
+.jeden, .dwa{
+    margin-top: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.jeden{
+    background-color: #030213;
+    color: white;
+    border-radius: 10px;
+}
+
+.dwa{
+    border: gray 1px solid;
+    border-radius: 10px;
+}
+
+
+/* main3 */
+
+
+
+/* footer1 */
+
+footer{
+    background-color: rgba(129, 132, 156, 0.146);
+    color: black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+footer .pierwsza{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.naglowek{
+    color: black;
+}
+
+.links p {
+    margin-top: 7px;
+}
+.discover p {
+    margin-top: 7px;
+}
+.team p {
+    margin-top: 7px;
+}
+
+/* footer1 */
+
+/* footer2 */
+
+.druga hr{
+    width: 42%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+/* footer2 */
+
+/* footer3 */
+.trzecia p{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+/* footer3 */

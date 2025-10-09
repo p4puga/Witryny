@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    font-family: Segoe UI, Arial;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+
+/* header */
+header {
+    background-color: #030213;
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    
+}
+
+.left{
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glowna, .galeria, .opolsce, .atrakcje,.kontakt {
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.galeria:hover, .glowna:hover, .atrakcje:hover, .kontakt:hover {
+    cursor: pointer;
+    background-color: #090912;
+    border-color: white;
+}
+
+.opolsce{
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* header */
+
+/* main */
+
+main{
+    flex: 1;
+}
+.image {
+    width: 100%;
+    height: 650px;
+    background-image: url("../zdjecia/gdansk.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.image p {
+    font-size: 100px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 2);
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.napisy{
+    width: 50%;
+    text-align: left;
+    padding: 30px;
+    color: gray;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(129, 132, 156, 0.146);
+
+}
+
+.napisy p{
+    margin: 20px;
+}
+
+.napisy .grube{
+    color: black;
+    font-weight: bold;
+}
+
+.dol{
+    margin: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+/* main */
+
+
+
+
+
+/* footer1 */
+
+footer{
+    background-color: rgba(129, 132, 156, 0.146);
+    color: black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer .pierwsza{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.naglowek{
+    color: black;
+}
+
+.links p {
+    margin-top: 7px;
+}
+.discover p {
+    margin-top: 7px;
+}
+.team p {
+    margin-top: 7px;
+}
+
+/* footer1 */
+
+/* footer2 */
+
+.druga hr{
+    width: 42%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+/* footer2 */
+
+/* footer3 */
+.trzecia p{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+/* footer3 */

@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    font-family: Segoe UI, Arial;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+
+
+/* header */
+header {
+    background-color: #030213;
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    
+}
+
+.left{
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glowna, .galeria, .opolsce, .atrakcje, .kontakt {
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.galeria:hover, .opolsce:hover, .glowna:hover, .kontakt:hover {
+    cursor: pointer;
+    background-color: #090912;
+    border-color: white;
+}
+
+.atrakcje{
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* header */
+
+
+/* main1 */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.czarne{
+    color: black;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.top{
+    color: gray;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.mid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.svg {
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.svg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.svg img {
+    width: 45px;
+    height: 45px;
+    background-color: #030213;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.svg p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.svg p:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.svg p:nth-of-type(2) {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.svg p:nth-of-type(3) {
+    font-size: 15px;
+    color: #777;
+}
+
+.svg p:nth-of-type(3)::before {
+    content: "Przykłady: ";
+    font-weight: 600;
+    color: #555;
+}
+
+/* main1 */
+
+/* main2 */
+.bottom {
+  background-color: rgba(129, 132, 156, 0.146);
+  border-radius: 12px;
+  padding: 30px 50px;
+  max-width: 1300px;
+  margin: 40px auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.bottom .title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.row p {
+  margin: 0;
+  line-height: 1.6;
+  width: 50%;
+}
+
+.header p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+b {
+  font-weight: 600;
+}
+
+
+
+
+
+/* main2 */
+
+
+
+/* Responsywność */
+@media (max-width: 1000px) {
+    .mid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .mid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* main */
+
+
+/* footer1 */
+
+footer{
+    background-color: rgba(129, 132, 156, 0.146);
+    color: black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer .pierwsza{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.naglowek{
+    color: black;
+}
+
+.links p {
+    margin-top: 7px;
+}
+.discover p {
+    margin-top: 7px;
+}
+.team p {
+    margin-top: 7px;
+}
+
+/* footer1 */
+
+/* footer2 */
+
+.druga hr{
+    width: 42%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+/* footer2 */
+
+/* footer3 */
+.trzecia p{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+/* footer3 */

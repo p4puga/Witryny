@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    font-family: Segoe UI, Arial;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    background-color: #030213;
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    
+}
+
+.left{
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glowna, .galeria, .opolsce, .atrakcje, .kontakt {
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.glowna:hover, .opolsce:hover, .atrakcje:hover, .galeria:hover {
+    cursor: pointer;
+    background-color: #090912;
+    border-color: white;
+}
+
+.kontakt{
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* header */
+
+/* main */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakty{
+    color: gray;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.czarne{
+    color: black;
+    font-size: 40px;
+}
+
+/* form */
+.formularze {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 50px;
+}
+
+/* Lewa kolumna */
+.lewo {
+    width: 45%;
+    height: 500px;
+    background-color: rgba(129, 132, 156, 0.146);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.czarne2{
+    color: black;
+}
+
+.czarne3{
+    color: black;
+}
+
+p{
+    color: gray;
+}
+
+/* Prawa kolumna */
+.prawo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.gora, .dol {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: white 1px solid;
+}
+
+.gora{
+    background-color: rgba(129, 132, 156, 0.146);
+}
+
+.dol table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.dol td {
+    padding: 8px 0;
+}
+
+.dol{
+    background-color: #030213;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Formularz */
+.lewo input, .lewo button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.lewo button {
+    background-color: #030213;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lewo button:hover {
+    background-color: #090912;
+}
+
+/* Teksty */
+.czarne2, .czarne3, .czarne2 {
+    font-size: 20px
+}
+
+
+/* main */
+
+
+/* footer1 */
+
+footer{
+    background-color: rgba(129, 132, 156, 0.146);
+    color: black;
+    width: 100%;
+}
+
+footer .pierwsza{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.naglowek{
+    color: black;
+}
+
+.links p {
+    margin-top: 7px;
+}
+.discover p {
+    margin-top: 7px;
+}
+.team p {
+    margin-top: 7px;
+}
+
+/* footer1 */
+
+/* footer2 */
+
+.druga hr{
+    width: 42%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+/* footer2 */
+
+/* footer3 */
+.trzecia p{
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+/* footer3 */
