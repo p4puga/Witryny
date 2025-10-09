@@ -21,7 +21,7 @@
 
     <main>
         <section class="image">
-            <p>o Polsce</p>
+            <p>O Polsce</p>
         </section>
         <section class="dol">
         <section class="napisy">
